@@ -23,6 +23,7 @@ jobs:
 
       - name: Build with Maven
         run: |
+             pwd
              cd ./hibernate-orm-panache-quickstart
              mvn clean install
 
