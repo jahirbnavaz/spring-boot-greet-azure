@@ -4,9 +4,9 @@
 name: Build and deploy JAR app to Azure Web App - spring-boot-greet-azure
 
 on:
-  push:
-    branches:
-      - main
+  #push:
+  #  branches:
+  #    - main
   workflow_dispatch:
 
 jobs:
@@ -24,7 +24,6 @@ jobs:
       - name: Build with Maven
         run: |
              pwd
-             cd ./hibernate-orm-panache-quickstart
              mvn clean install
 
       - name: Upload artifact for deployment job
